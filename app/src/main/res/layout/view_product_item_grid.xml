@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/top_icon_detail"
+            android:layout_width="150dp"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/empty_image" />
+
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgProduct"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Item Name"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtProductName"
+                android:singleLine="true"
+                android:text="Rs 20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgSale"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+
+                app:srcCompat="@drawable/sale_icon" />
+
+
+        </RelativeLayout>
